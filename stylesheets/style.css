@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: arial;
+  background-image: url("img/navy_blue.png");
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+/*HEADER*/
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  background-image: url("../images/dark.png");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  padding: 15px;
+  width: 50%;
+  color: #0cff24;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px auto;
+}
+.sub-titulo {
+  font-size: 28px;
+}
+.label-titulo {
+  margin: 15px;
+  color: white;
+}
+.textarea textarea {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.box {
+  padding: 20px;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5em;
+  width: 45%;
+  height: auto;
+}
+
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+}
+
+.text-input {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 10px;
+}
+textarea {
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+  margin: 30px auto;
+}
+textarea:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+div #btn-encriptar,
+div #btn-desencriptar,
+div #btn-copy {
+  font-size: 20px;
+  margin-left: 10px;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+div #btn-encriptar {
+  background-color: green;
+}
+
+div #btn-desencriptar {
+  background-color: yellow;
+  margin-left: 30px;
+  color: black;
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
+div #btn-desencriptar:hover {
+  color: green;
+}
+div #btn-copy {
+  background-color: blue;
+}
+div #btn-copy:hover {
+  color: black;
+}
+.modal .modal-content {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px solid white;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+  border-radius: 10px;
+}
+.modal .modal-body {
+  font-size: 24px;
+  color: white;
+}
+.modal .btn-secondary {
+  font-size: 20px;
+  margin-left: 10px;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+.modal .btn-secondary:hover {
+  background-color: blue;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer .fa-github {
+  margin-right: 40px;
+}
+
+@media (max-width: 1400px) {
+  .titulo {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .sub-titulo {
+    font-size: 20px;
+  }
+  .main {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .titulo {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .sub-titulo {
+    font-size: 20px;
+  }
+  .main {
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+  }
+  .textarea textarea {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .titulo {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .sub-titulo {
+    font-size: 15px;
+  }
+  .main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box {
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    width: 100%;
+    height: auto;
+  }
+  div #btn-desencriptar {
+    margin-left: 10px;
+  }
+  .textarea textarea {
+    font-size: 14px;
+  }
+  div #btn-encriptar,
+  div #btn-desencriptar,
+  div #btn-copy {
+    font-size: 12px;
+  }
+}
