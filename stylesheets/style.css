@@ -6,7 +6,7 @@
 
 html,
 body {
-  height: 100%;
+  height: 99%;
 }
 body {
   font-family: arial;
@@ -192,6 +192,9 @@ footer .fa-github {
   .textarea textarea {
     font-size: 16px;
   }
+  footer{
+    font-size:12px;
+  }
 }
 @media (max-width: 400px) {
   .titulo {
@@ -229,5 +232,8 @@ footer .fa-github {
   div #btn-desencriptar,
   div #btn-copy {
     font-size: 12px;
+  }
+  footer{
+    font-size:10px;
   }
 }
