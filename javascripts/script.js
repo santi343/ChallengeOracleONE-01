@@ -9,7 +9,6 @@ const writing = (str) => {
     } else {
       document.querySelector("h1").innerHTML += arrFromStr[i];
       i++;
-      document.querySelector("h1").style.backgroundColor = "20px";
     }
     if (i === arrFromStr.length) {
       clearInterval(printStr);

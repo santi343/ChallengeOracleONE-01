@@ -7,9 +7,9 @@ const cargarModal = (texto) => {
 
 const checkTextUser = (text) => {
     return !text
-        ? cargarModal("El texto No puede estar vacio.")
+        ? cargarModal("El Mensaje No puede estar vacio.")
         : /(\s{2})/.test(text)
-        ? cargarModal("El texto tiene dos o mas espacios en blanco seguidos.")
+        ? cargarModal("El Mensaje No debe tener dos o mas espacios en blanco seguidos.")
         : !/^[abcdefghijklmñnopqrstuvwxyz!.\s]*$/.test(text)
         ? cargarModal("Ingreso caracteres No validos.")
         : true;
